@@ -1,0 +1,36 @@
+-- SELECT * FROM campusx.movie
+-- SELECT name,score FROM campusx.movie
+-- ORDER BY score DESC LIMIT 1
+-- SELECT MAX(score) FROM campusx.movie
+--
+-- SELECT genre, MAX(votes) AS "max_votes"
+-- FROM campusx.movie GROUP BY genre
+-- ORDER BY max_votes DESC 
+--
+-- SELECT name,genre,score FROM campusx.movie 
+-- ORDER BY score DESC LIMIT 1,1
+--
+-- SELECT * FROM campusx.movie
+-- SELECT AVG(budget) AS "avg_budget", genre FROM campusx.movie GROUP BY genre
+--
+-- This is subquery(query within query)
+-- SELECT * FROM campusx.movie
+-- WHERE score = (SELECT MAX(score) FROM campusx.movie)
+--
+-- SELECT * FROM campusx.movie
+-- WHERE (gross-budget)=(SELECT MAX(gross-budget) FROM campusx.movie)
+--
+-- SELECT LEFT(name,4) FROM campusx.movie
+--
+-- SELECT RIGHT(name,4) FROM campusx.movie
+--
+-- SELECT CONCAT(LEFT(name,3),"***") FROM campusx.movie
+--
+-- SELECT SUBSTR(name,3,7) FROM campusx.movie
+--
+-- SELECT name FROM campusx.movie
+-- WHERE name LIKE "A____" 
+--
+-- This is subquery(query within query)
+-- SELECT * FROM campusx.movie
+-- WHERE score = (SELECT MAX(score) FROM campusx.movie)
